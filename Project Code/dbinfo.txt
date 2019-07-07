@@ -1,1 +1,2 @@
-
+CREATE TABLE `bus route`.`user` ( `email` VARCHAR NOT NULL , `fullname` VARCHAR NOT NULL , `password` VARCHAR NOT NULL ) 
+CREATE TABLE `bus route`.`user_info` ( `first_name` VARCHAR NOT NULL , `last_name` INT NOT NULL , `dob` INT NOT NULL , `password` INT NOT NULL , `email` INT NOT NULL , `username` INT NOT NULL ) ENGINE = InnoDB;
