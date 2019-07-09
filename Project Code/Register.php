@@ -1,4 +1,7 @@
-
+<?php 
+  include("library.php");
+  noAccessIfLoggedIn();
+?>
 <html lang="en">
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +13,15 @@
     <div id="particles-js" class="mainbg" style="height: 800px;" >
     <main class="loginform pa4 black-80" style="left:44%">
      
+    <?php 
+    if(isset($_POST['submit'])){
+     register($_POST['First_Name'],$_POST['Last_Name'],$_POST['email-address'],$_POST['password'],$_POST['User'],$_POST['dob'],"users_info");
+    }
+    else{
+  
+    }
+    unset($_POST);
+  ?>
     
     
     
