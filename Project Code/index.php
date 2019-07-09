@@ -25,6 +25,23 @@ session_start();
      <h1 class="logo center"><img src="img/bus-stop.png" alt="" height="30px" width="30px">BusFinder</h1>
      
      
+     <?php 
+    if(isset($_POST['lemail'])){
+      $i = login($_POST['lemail'],$_POST['lpassword'],"user");
+      if($i==1){
+        echo '<script type="text/javascript"> window.location = "home1.php" </script>';
+      }
+    }
+     
+     
+     else{
+  
+    }
+    unset($_POST);
+  ?>
+     
+     
+     
     
      
      
