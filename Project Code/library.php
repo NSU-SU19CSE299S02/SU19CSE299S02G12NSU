@@ -47,3 +47,43 @@
             return 1;
         }
     }
+function status($type, $data = 0)
+    {
+        $success = "<div class='alert alert-success'> <strong>Done!</strong>";
+        $fail = "<div class='alert alert-warning'><strong>Sorry!</strong>";
+        $end = '</div>';
+
+        switch ($type) {
+            case 'record-success':
+                return "$success New record created successfully! $end";
+                break;
+            case 'record-fail':
+                return "$fail New record creation failed. $end";
+                break;
+            case 'record-dup':
+                return "$fail Duplicate record exists. $end";
+                break;
+            case 'no-match':
+                return "$fail Record did not match. $end";
+                break;
+            case 'con-failed':
+                return "$fail connection Failed! $end";
+                break;
+            case 'appointment-success':
+                return "$success Your appointment is booked successfully! Your appointment no is $data $end";
+                break;
+            case 'appointment-fail':
+                return "$fail Failed to book your appointment Failed! $end";
+                break;
+            case 'update-success':
+                return "$success New record updated successfully! $end";
+                break;
+            case 'update-fail':
+                return "$fail Failed to update data! $end";
+                break;
+            default:
+                // code...
+                break;
+        }
+    }
+
