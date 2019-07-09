@@ -47,6 +47,35 @@
             return 1;
         }
     }
+
+function register($first_name, $last_name, $email, $password,$user,$dob,$table_name)
+    {
+        global $connection,$error_flag;
+
+
+        $sql="INSERT INTO `users_info` (`first_name`, `last_name`, `email`, `password`, `dob`, `username`) VALUES ('$first_name', '$last_name', '$email', '$password', '$dob', '$user');";
+        
+
+
+        
+
+        if ($connection->query($sql) === true) {
+            echo status('record-success');
+            }
+         else {
+            echo status('record-fail');
+        }
+        
+        $sql2=" INSERT INTO `user` (`email`, `fullname`, `password`) VALUES ('$email', '$first_name', '$password');";
+         if ($connection->query($sql2) === true) {
+            echo status('You can now logged in');
+            }
+         else {
+            echo status('record-fail');
+        }
+        
+    }
+
 function status($type, $data = 0)
     {
         $success = "<div class='alert alert-success'> <strong>Done!</strong>";
