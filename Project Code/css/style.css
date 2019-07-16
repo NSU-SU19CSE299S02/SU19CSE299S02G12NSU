@@ -187,7 +187,45 @@
 }
 .u_his{
     float: right;
-    right: 20px;
-    margin-right: 30px;
+    right: 20px;.search_form{
+  z-index: 6;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    display: inline-block;
+     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    padding: 20px;
+    
 }
 
+
+
+.location,.destination,.submit,.date{
+    float: left;
+}
+    margin-right: 30px;
+}
+.search_form{
+  z-index: 6;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    display: inline-block;
+     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    padding: 20px;
+    
+}
+
+
+
+.location,.destination,.submit,.date{
+    float: left;
+}
