@@ -1,4 +1,16 @@
+#SU19CSE299S02G12NSU
+North South University
 Project Name: Bus Route Finder
+CSE299 : Junior Design
+Sec:02 ,Group :12
+Instructor :  SHAIKH SHAWON AREFIN SHIMON(SAS3)
+Semester: Summer'19
+ GROUP MEMBERS 
+ 1.A.K.M KIBRIA HASAN                         ID:1621231042
+          Email:a.k.m.hasan@northsouth.edu
+ 2. Sayma Akter Snigdha                       ID: 1620838042
+          Email:sayma.snigdha@northsouth.edu
+          
 Git Repository : https://github.com/Shanto96/SU19CSE299S02G12NSU/
 1.Project Idea:
 We are trying to build a Web Apps that will help people to find the best Bus for a specific road. For travelling from one place to another we always try to find best bus and best road. Our plan is to provide the best possible bus according to review and timing. And you always find the shortest and jam free road by using this portal.  And you can also get combination of bus if there any need of multiple bus. You can book your ticket and make payment through a secure payment service.
