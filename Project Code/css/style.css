@@ -166,4 +166,28 @@
     }
 }
 
+.user_info{
+    height: 70px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    
+    background-color: #a0b6c4cc;
+    padding: 20px;
+    border-bottom: 2px solid #454a5085;
+}
+.u_dp{
+    float: left;
+}
+.u_text{
+    float: left;
+    width: 50%;
+}
+.u_his{
+    float: right;
+    right: 20px;
+    margin-right: 30px;
+}
 
