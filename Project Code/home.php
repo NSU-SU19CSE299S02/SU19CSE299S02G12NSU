@@ -1,3 +1,13 @@
+<?php
+    if (!isset($_SESSION)) {
+        session_start();
+    
+    }
+?>
+<?php
+ 
+  include 'library.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
