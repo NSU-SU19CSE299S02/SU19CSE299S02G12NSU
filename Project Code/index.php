@@ -3,7 +3,7 @@ session_start();
 ?>
 <?php 
   include("library.php");
-  noAccessIfLoggedIn();
+ 
 ?>
 
 
@@ -29,7 +29,7 @@ session_start();
     if(isset($_POST['lemail'])){
       $i = login($_POST['lemail'],$_POST['lpassword'],"user");
       if($i==1){
-        echo '<script type="text/javascript"> window.location = "home1.php" </script>';
+        echo '<script type="text/javascript"> window.location = "home.php" </script>';
       }
     }
      
