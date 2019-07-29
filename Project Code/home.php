@@ -32,7 +32,37 @@
             </div>   
              <div class="user_info">
             <div class="u_dp"><img src="img/user-512.png" alt=""></div>
-            <h1 class="u_text">User Name</h1>
+            <h1 class="u_text">
+ <?php
+                 $emailu= $_SESSION['username'];
+  $query ="SELECT fullname FROM `user` WHERE email='$emailu' ";
+   $query_run=mysqli_query($connection,$query);
+    $row=mysqli_fetch_array($query_run,MYSQLI_ASSOC);
+   @$fullname=$row[fullname];
+   echo "$fullname";
+                    
+        $query ="SELECT ui.first_name,ui.last_name
+FROM friend_list f JOIN users_info ui on f.Friend_id=ui.email
+WHERE f.User_id ='$emailu' ";
+                    $query_run=$connection->query($query);
+
+                    ?>             <?php
+                 $emailu= $_SESSION['username'];
+  $query ="SELECT fullname FROM `user` WHERE email='$emailu' ";
+   $query_run=mysqli_query($connection,$query);
+    $row=mysqli_fetch_array($query_run,MYSQLI_ASSOC);
+   @$fullname=$row[fullname];
+   echo "$fullname";
+                    
+        $query ="SELECT ui.first_name,ui.last_name
+FROM friend_list f JOIN users_info ui on f.Friend_id=ui.email
+WHERE f.User_id ='$emailu' ";
+                    $query_run=$connection->query($query);
+
+                    ?>
+            
+            
+            </h1>
             
             
             
