@@ -70,7 +70,7 @@ WHERE f.User_id ='$emailu' ";
             
             
             
-            <img src="img/download.png" alt="">
+         <a href="#" class="mega_button">Buy Ticket</a>
             </div>
             
             
