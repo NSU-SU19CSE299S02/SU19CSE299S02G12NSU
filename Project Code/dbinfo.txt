@@ -1,8 +1,2 @@
-// Changing column format in user info table
-ALTER TABLE `users_info` CHANGE `first_name` `first_name` VARCHAR(80) NOT NULL;
-ALTER TABLE `users_info` CHANGE `last_name` `last_name` VARCHAR(80) NOT NULL;
-ALTER TABLE `users_info` CHANGE `email` `email` VARCHAR(80) NOT NULL;
-ALTER TABLE `users_info` CHANGE `password` `password` VARCHAR(80) NOT NULL;
-ALTER TABLE `users_info` CHANGE `dob` `dob` DATE NOT NULL;
-ALTER TABLE `users_info` CHANGE `username` `username` VARCHAR(11) NOT NULL;
+<
 
