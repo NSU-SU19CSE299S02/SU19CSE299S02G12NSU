@@ -1,6 +1,7 @@
-#3#SU19CSE299S02G12NSU
+**SU19CSE299S02G12NSU**
 
-##North South University
+
+**##North South University**
 
 **Project Name: Bus Route Finder
 CSE299 : Junior Design
@@ -10,9 +11,9 @@ Instructor :  SHAIKH SHAWON AREFIN SHIMON(SAS3)**
 Semester: Summer'19
  GROUP MEMBERS 
  1.A.K.M KIBRIA HASAN                         ID:1621231042
-          Email:a.k.m.hasan@northsouth.edu
+          [Email](a.k.m.hasan@northsouth.edu)
  2. Sayma Akter Snigdha                       ID: 1620838042
-          Email:sayma.snigdha@northsouth.edu
+          [Email](sayma.snigdha@northsouth.edu)
           
 [Git Repository](https://github.com/Shanto96/SU19CSE299S02G12NSU/)
 
