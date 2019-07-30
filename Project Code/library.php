@@ -48,12 +48,12 @@
         }
     }
 
-function register($first_name, $last_name, $email, $password,$user,$dob,$table_name)
+function register($first_name, $last_name, $email, $password,$user,$dob,$usertype,$table_name)
     {
         global $connection,$error_flag;
 
 
-        $sql="INSERT INTO `users_info` (`first_name`, `last_name`, `email`, `password`, `dob`, `username`) VALUES ('$first_name', '$last_name', '$email', '$password', '$dob', '$user');";
+        $sql="INSERT INTO `users_info` (`first_name`, `last_name`, `email`, `password`, `dob`, `username`,`usertype`) VALUES ('$first_name', '$last_name', '$email', '$password', '$dob', '$user','$usertype');";
         
 
 
