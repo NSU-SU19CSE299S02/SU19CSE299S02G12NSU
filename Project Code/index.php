@@ -3,7 +3,7 @@ session_start();
 ?>
 <?php 
   include("library.php");
-  noAccessIfLoggedIn();
+ 
 ?>
 
 
@@ -29,7 +29,7 @@ session_start();
     if(isset($_POST['lemail'])){
       $i = login($_POST['lemail'],$_POST['lpassword'],"user");
       if($i==1){
-        echo '<script type="text/javascript"> window.location = "home1.php" </script>';
+        echo '<script type="text/javascript"> window.location = "home.php" </script>';
       }
     }
      
@@ -65,7 +65,7 @@ session_start();
       <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" value="Sign in" >
     </div>
     <div class="lh-copy mt3">
-      <a href="Register.html" class="f6 link dim black db">Sign up  or Use  </a>
+      <a href="Register.php" class="f6 link dim black db">Sign up  or Use  </a>
       <h2><img src="img/001-facebook.png" alt="Create" title="create account Using facebook"> <img src="img/002-search.png" alt="" title="Create account using google"></h2>
       
       <a href="#0" class="f6 link dim black db">Forgot your password?</a>

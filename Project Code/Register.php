@@ -1,12 +1,12 @@
 <?php 
   include("library.php");
-  noAccessIfLoggedIn();
+  
 ?>
 <html lang="en">
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Registration</title>
 </head>
 <body >
@@ -15,7 +15,7 @@
      
     <?php 
     if(isset($_POST['submit'])){
-     register($_POST['First_Name'],$_POST['Last_Name'],$_POST['email-address'],$_POST['password'],$_POST['User'],$_POST['dob'],"users_info");
+     register($_POST['First_Name'],$_POST['Last_Name'],$_POST['email-address'],$_POST['password'],$_POST['User'],$_POST['dob'],$_POST[usertype]"users_info");
     }
     else{
   
@@ -59,6 +59,16 @@
         <div class="mv3">
         <label class="db fw6 lh-copy f6" for="Dob">Date of Birth</label>
         <input class="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="date" name="dob"  id="password">
+      </div>
+       <div class="mv3">
+        <label class="db fw6 lh-copy f6" for="Dob">User type</label>
+<!--        <input class="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="" name="ut"  id="password">-->
+     <select name="usertype">
+  <option value="User">User</option>
+  <option value="Stuff">Stuff</option>
+  <option value="Authority">Authority</option>
+  <option value="Admin">Admin</option>
+</select>
       </div>
       <label class="pa0 ma0 lh-copy f6 pointer"><input type="checkbox"> Remember me</label>
     </fieldset>
