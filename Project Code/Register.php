@@ -15,7 +15,7 @@
      
     <?php 
     if(isset($_POST['submit'])){
-     register($_POST['First_Name'],$_POST['Last_Name'],$_POST['email-address'],$_POST['password'],$_POST['User'],$_POST['dob'],"users_info");
+     register($_POST['First_Name'],$_POST['Last_Name'],$_POST['email-address'],$_POST['password'],$_POST['User'],$_POST['dob'],$_POST[usertype]"users_info");
     }
     else{
   
@@ -63,7 +63,7 @@
        <div class="mv3">
         <label class="db fw6 lh-copy f6" for="Dob">User type</label>
 <!--        <input class="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="" name="ut"  id="password">-->
-     <select>
+     <select name="usertype">
   <option value="User">User</option>
   <option value="Stuff">Stuff</option>
   <option value="Authority">Authority</option>
