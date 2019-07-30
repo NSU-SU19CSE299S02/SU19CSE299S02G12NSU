@@ -506,7 +506,17 @@ nav ul li div { position: relative; }
 
 
 
-
+.mega_button{
+    display: block;
+    background: red;
+    text-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 14px;
+    font-family: -webkit-pictograph;
+    border: 2px solid #8b8b8b;
+}
 
 
 
