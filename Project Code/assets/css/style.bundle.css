@@ -904,15 +904,6 @@ pre code {
         max-width: 100%
     }
 
-    .col-sm-1 {
-        flex: 0 0 8.33333%;
-        max-width: 8.33333%
-    }
-
-    .col-sm-2 {
-        flex: 0 0 16.66667%;
-        max-width: 16.66667%
-    }
 
     .col-sm-3 {
         flex: 0 0 25%;
