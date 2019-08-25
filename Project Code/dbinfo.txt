@@ -2,3 +2,6 @@
 
 CREATE TABLE `bus route`.`History` ( `Date` DATE NOT NULL , `Location` VARCHAR(60) NOT NULL , `Destination` VARCHAR(60) NOT NULL , `Duration` INT(60) NOT NULL , `Review` INT NOT NULL ) ENGINE = InnoDB;
 ALTER TABLE `users_info` ADD `usertype` VARCHAR(60) NOT NULL AFTER `username`;
+CREATE TABLE `bus route`.`location_destination` ( `Location` VARCHAR(60) NOT NULL , `Destination` VARCHAR(60) NOT NULL , `ld_id` INT(20 ) NOT NULL ) ENGINE = InnoDB;
+ALTER TABLE `location_destination` ADD Ld_id int NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST
+
