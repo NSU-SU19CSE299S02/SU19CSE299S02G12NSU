@@ -33,6 +33,7 @@ CREATE TABLE buses(
 
 )
 CREATE TABLE bus_rating(
+
 bus_id int,
 rating_id int,
 user_name varchar(30),
@@ -41,5 +42,17 @@ rating int(5),
     PRIMARY KEY (rating_id),
     FOREIGN KEY (bus_id) REFERENCES buses(bus_id)
 )
+CREATE TABLE bus_route(
+bus_id int,
+route_id int,
+ start_loc varchar(30),
+ end_loc varchar(30),
+ FOREIGN KEY (route_id) REFERENCES route(route_id),
+ FOREIGN KEY(bus_id) REFERENCES bus(bus_id)
+ 
+)
+
+
+
 
 
