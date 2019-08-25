@@ -25,3 +25,10 @@ comment varchar(500),
  PRIMARY KEY (rating_id),
  FOREIGN KEY (route_id) REFERENCES route(route_id)
 )
+CREATE TABLE buses(
+    Name varchar(100) ,
+    Company_Name varchar(100) ,
+    bus_id int AUTO_INCREMENT NOT Null,
+    PRIMARY KEY(bus_id)
+
+)
