@@ -5,3 +5,14 @@ ALTER TABLE `users_info` ADD `usertype` VARCHAR(60) NOT NULL AFTER `username`;
 CREATE TABLE `bus route`.`location_destination` ( `Location` VARCHAR(60) NOT NULL , `Destination` VARCHAR(60) NOT NULL , `ld_id` INT(20 ) NOT NULL ) ENGINE = InnoDB;
 ALTER TABLE `location_destination` ADD Ld_id int NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST
 
+CREATE TABLE route(
+route_id INT(5) NOT Null AUTO_INCREMENT,
+Ld_id INT(5),
+duration decimal(10),
+Map varchar(1000),
+Description varchar(400),
+    PRIMARY KEY (route_id),
+    FOREIGN KEY (Ld_id) REFERENCES location_destination(Ld_id)
+
+
+  )
