@@ -16,3 +16,12 @@ Description varchar(400),
 
 
   )
+CREATE TABLE route_rating (
+route_id int(10),
+rating_id int(10) AUTO_INCREMENT,
+user_name varchar(100) ,
+rating int(5),
+comment varchar(500),
+ PRIMARY KEY (rating_id),
+ FOREIGN KEY (route_id) REFERENCES route(route_id)
+)
