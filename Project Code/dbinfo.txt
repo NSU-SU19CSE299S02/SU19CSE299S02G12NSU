@@ -51,3 +51,10 @@ route_id int,
  
 )
 
+CREATE TABLE bus_schedule(
+    bus_id  int(10),
+    off_day varchar(30),
+    start_time varchar(30),
+    end_time varchar(50),
+    FOREIGN KEY bus_id REFERENCES buses(bus_id)
+)
