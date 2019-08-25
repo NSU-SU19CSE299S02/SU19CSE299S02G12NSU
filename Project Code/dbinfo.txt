@@ -33,6 +33,7 @@ CREATE TABLE buses(
 
 )
 CREATE TABLE bus_rating(
+
 bus_id int,
 rating_id int,
 user_name varchar(30),
@@ -50,6 +51,7 @@ route_id int,
  FOREIGN KEY(bus_id) REFERENCES bus(bus_id)
  
 )
+
 
 CREATE TABLE bus_schedule(
     bus_id  int(10),
