@@ -180,6 +180,14 @@ $query_run2=$connection->query($sql2);
                         <td      style="border: 1px solid #dddddd;
  text-align: left;
  padding: 8px;">' .$row['Description'].'</td>';
+
+
+ echo' <td     style="border: 1px solid #dddddd;
+ text-align: left;
+ padding: 8px;">' .$row['duration'].'</td>';
+                        
+
+                        
          </div>
 
         </div>
