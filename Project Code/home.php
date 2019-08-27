@@ -158,12 +158,15 @@ $query_run2=$connection->query($sql2);
     border-radius: 25px;
     padding: 0 23px 0 81px;">
                 </div> 
-                <div class="date">
+                <!-- <div class="date">
             <input type="date" name="Your_tirp_date" placeholder="Date">
                
-                </div>
-                <div class="submit">
-                    <button>Submit </button>
+                </div> -->
+                <div class="submit" >
+                  <input type="submit" value="search" style="border: none;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;">
                 </div>
                  
              </form>
