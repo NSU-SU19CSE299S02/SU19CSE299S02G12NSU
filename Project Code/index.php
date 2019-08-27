@@ -26,10 +26,18 @@ session_start();
      
      
      <?php 
-    if(isset($_POST['lemail'])){
+    if(isset($_POST['lemail']))
+       
+    {
       $i = login($_POST['lemail'],$_POST['lpassword'],"user");
       if($i==1){
-        echo '<script type="text/javascript"> window.location = "home.php" </script>';
+          if($_POST['lemail']=="admin@admin"){
+              echo '<script type="text/javascript"> window.location = "http://localhost/new%20folder/dashboard.html" </script>';
+              
+          }
+          else{
+          
+        echo '<script type="text/javascript"> window.location = "home.php" </script>';}
       }
     }
      
