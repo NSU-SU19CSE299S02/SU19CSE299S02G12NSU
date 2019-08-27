@@ -135,7 +135,16 @@ $query_run2=$connection->query($sql2);
             <h1>Search Your Trip</h1>
              <form action="">
                 <div class="location">
-            <input type="text" name="Your_location" placeholder="location">
+            <input type="text" name="Your_location" placeholder="location" style="font-family: Poppins-Medium;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    display: block;
+    width: 34%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 23px 0 81px;">
                 </div>
                 <div class="destination">
             <input type="text" name="Your_destination" placeholder="Destination">
