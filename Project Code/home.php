@@ -83,6 +83,25 @@ WHERE f.User_id ='$emailu' ";
     font-family: -webkit-pictograph;
     border: 2px solid #8b8b8b;">Balance $50</a>
                     </div>
+
+                    <div class="u_his">
+
+
+
+                        <a href="#" class="mega_button" style="display: block;
+    background: red;
+    text-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 14px;
+    font-family: -webkit-pictograph;
+    border: 2px solid #8b8b8b;">
+                   
+                   
+                   
+                   Log Out</a>
+                    </div>
             
             
             
