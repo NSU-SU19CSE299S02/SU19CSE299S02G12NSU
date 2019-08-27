@@ -105,7 +105,29 @@ WHERE f.User_id ='$emailu' ";
             
             
             
-            
+         <?php
+                
+                 
+                 if(isset($_POST['Your_location'])){
+                    $location = $_POST['Your_location'];
+                     $destination = $_POST['Your_destination'];
+                    
+                   $sql="SELECT r.Map,r.duration,r.Description FROM route r WHERE r.Ld_id=( SELECT Ld_id FROM location_destination l WHERE l.Location='$location' AND l.Destination='$destination')" ;
+                  
+                     
+                    
+                    $query_run=$connection->query($sql);
+                    
+    
+                $sql2="SELECT bs.name
+FROM location_destination ld JOIN route r on r.Ld_id=ld.Ld_id
+JOIN bus_route b on r.route_id=b.route_id 
+JOIN buses bs on bs.bus_id=b.bus_id
+WHERE ld.Location='$location' and ld.Destination= '$destination' ";
+
+$query_run2=$connection->query($sql2);
+                 }
+                 ?>    
         </div>
         
         
