@@ -185,9 +185,21 @@ $query_run2=$connection->query($sql2);
  echo' <td     style="border: 1px solid #dddddd;
  text-align: left;
  padding: 8px;">' .$row['duration'].'</td>';
+
+  echo'<td>';
+                        while ($row2=$query_run2->fetch_array())
+                        {
+                           echo' 
+                        <td     style="border: 1px solid #dddddd;
+ text-align: left;
+ padding: 8px;">' .$row2['name'].'</td>';
+                       
+                        }
+                        echo'</td>';
+                    echo'</tr>';
                         
 
-                        
+
          </div>
 
         </div>
