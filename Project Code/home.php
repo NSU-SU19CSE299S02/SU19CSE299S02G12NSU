@@ -46,20 +46,7 @@ FROM friend_list f JOIN users_info ui on f.Friend_id=ui.email
 WHERE f.User_id ='$emailu' ";
                     $query_run=$connection->query($query);
 
-                    ?>             <?php
-                 $emailu= $_SESSION['username'];
-  $query ="SELECT fullname FROM `user` WHERE email='$emailu' ";
-   $query_run=mysqli_query($connection,$query);
-    $row=mysqli_fetch_array($query_run,MYSQLI_ASSOC);
-   @$fullname=$row[fullname];
-   echo "$fullname";
-                    
-        $query ="SELECT ui.first_name,ui.last_name
-FROM friend_list f JOIN users_info ui on f.Friend_id=ui.email
-WHERE f.User_id ='$emailu' ";
-                    $query_run=$connection->query($query);
-
-                    ?>
+                    ?>      
             
             
             </h1>
@@ -80,6 +67,22 @@ WHERE f.User_id ='$emailu' ";
     font-family: -webkit-pictograph;
     border: 2px solid #8b8b8b;">Buy Ticket</a>
             </div>
+
+
+            <div class="u_his">
+
+
+
+                        <a href="#" class="mega_button" style="display: block;
+    background: red;
+    text-color: red;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 14px;
+    font-family: -webkit-pictograph;
+    border: 2px solid #8b8b8b;">Balance $50</a>
+                    </div>
             
             
             
