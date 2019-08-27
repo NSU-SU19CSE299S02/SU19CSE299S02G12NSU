@@ -197,7 +197,19 @@ $query_run2=$connection->query($sql2);
                         }
                         echo'</td>';
                     echo'</tr>';
-                        
+                         echo '<br><tr  style=":nth-child(even) {
+  background-color: #dddddd;
+}"><th style="border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;">Map</th><td >'.$row['Map'].'</td></tr>';
+          
+       
+         echo'</table>';
+            
+            
+        
+        
+    } }?>
 
 
          </div>
