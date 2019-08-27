@@ -149,6 +149,37 @@ $query_run2=$connection->query($sql2);
                 </div>
                  
              </form>
+
+             <?php
+                        
+              $count=mysqli_num_rows($query_run);
+                     if($count == 0) {
+                        echo "<h1>NO RESULT</h1>";
+                    }
+                    else { 
+                     
+                    
+    
+                    while ($row = $query_run->fetch_array())
+    {
+        echo'<table style ="border-collapse: collapse;">';
+         echo '<tr style=":nth-child(even) {
+  background-color: #dddddd;
+}"><th style="border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;">description</th><th style="border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;">duration<th><th style="border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;">Buses<th></tr>';
+          
+                        
+                        
+                        
+                   echo' <tr>
+                        <td      style="border: 1px solid #dddddd;
+ text-align: left;
+ padding: 8px;">' .$row['Description'].'</td>';
          </div>
 
         </div>
